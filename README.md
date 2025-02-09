@@ -96,26 +96,7 @@ curl http://127.0.0.1:8000/logs
 
 
 curl http://127.0.0.1:8000/stats
-### Структура проекта
-mini-data-pipeline/
-├── .env                     # Переменные окружения
-├── docker-compose.yml       # Конфигурация Docker Compose
-├── requirements.txt         # Зависимости Python
-├── logs.txt                 # Файл с логами для Producer
-├── README.md                # Документация проекта
-├── producer/                # Producer: отправка логов в Kafka
-│   ├── __init__.py
-│   └── producer.py
-├── consumer/                # Consumer: чтение логов из Kafka и запись в PostgreSQL
-│   ├── __init__.py
-│   └── consumer.py
-├── api/                     # API-сервер на FastAPI для аналитики
-│   ├── __init__.py
-│   └── main.py
-└── utils/                   # Вспомогательные модули
-    ├── __init__.py
-    ├── db.py               # Функции для работы с PostgreSQL
-    └── kafka_config.py     # Конфигурация подключения к Kafka
+
 ### Дополнительная информация
 Docker и Docker Compose: Убедитесь, что Docker Desktop запущен перед поднятием контейнеров.
 Переменные окружения: При необходимости измените параметры подключения в файле .env.
