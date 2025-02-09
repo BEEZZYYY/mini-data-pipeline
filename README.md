@@ -53,16 +53,7 @@ pip install -r requirements.txt
 
 ###  3. Настройка переменных окружения
 В корне проекта находится файл .env, содержащий настройки для подключения к Kafka и PostgreSQL. При необходимости отредактируйте его:
-# Kafka
-KAFKA_BOOTSTRAP_SERVERS=localhost:9092
-KAFKA_TOPIC=logs
 
-# PostgreSQL
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=pipeline_db
-DB_USER=pipeline_user
-DB_PASSWORD=pipeline_pass
 ###  4. Поднятие инфраструктуры с помощью Docker Compose
 Для работы проекта требуются контейнеры с Kafka, Zookeeper и PostgreSQL. Убедитесь, что Docker установлен и запущен, затем выполните:
 
